@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0-alpha.1",
+  "description": "Alpha CLI, daemon and local dashboard for AI provider usage. Desktop acceptance and signing are pending.",
+  "homepage": "https://github.com/hashimkarim/usagestat",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/hashimkarim/usagestat/releases/download/v2.0.0-alpha.1/usagestat-windows-x86_64.zip",
+      "hash": "00cb3b250e6fc9e7bdcb06c9d4138edadf57e27c25fe3a818338abff7cbca86d"
+    }
+  },
+  "bin": [
+    "usagestat.exe",
+    "usagestatd.exe"
+  ],
+  "notes": [
+    "Unsigned backend alpha. Run usagestat --version and usagestat doctor.",
+    "Startup is explicit: usagestat daemon enable. Before upgrade: usagestat daemon disable.",
+    "After upgrade: usagestat daemon relocate, then restore the previous running/autostart state.",
+    "Before uninstall: usagestat daemon unregister. User settings/history are retained."
+  ]
+}
